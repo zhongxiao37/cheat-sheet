@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Layout } from "../components/atoms/Layout";
 import { PostTitle } from "../components/atoms/PostTitle";
-import { Card } from "../components/molecules/Card";
 import { PostBody } from "../components/molecules/PostBody";
 import { getAllPosts } from "../lib/api";
 import Post from "../types/post";

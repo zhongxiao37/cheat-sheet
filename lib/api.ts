@@ -31,7 +31,7 @@ export async function getPostBySlug(slug: string) {
 }
 
 const parseDescription = async (content: string) => {
-  const regex = /([^(###)]+)(?!###)/;
+  const regex = /([^(###)]+)/;
   const match = content.match(regex);
   let description = "";
   if (match) description = match[0];
@@ -40,7 +40,7 @@ const parseDescription = async (content: string) => {
 };
 
 const parseContent = async (content: string) => {
-  const regex = /(?:###\s(\w+))\n+(^[^(###)]+)/gm;
+  const regex = /(?:###\s(\w+))\n+(^[^#]+)/gm;
   const codes = Array.from(content.matchAll(regex));
 
   const promises = await Promise.all(

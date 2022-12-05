@@ -15,12 +15,6 @@ rbenv versions
 rbenv use 2.7.2
 ```
 
-```ruby
-def say
-  puts 'yes'
-end
-```
-
 ### Python
 
 ```bash
@@ -35,10 +29,6 @@ pyenv local
 ```bash
 yarn global add n
 n
-```
-
-```javascript
-import js from "js";
 ```
 
 ### Go
