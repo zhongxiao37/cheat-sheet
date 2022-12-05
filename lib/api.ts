@@ -16,9 +16,11 @@ export async function getPostBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  const description = await parseDescription(content);
   const parsedContent = await parseContent(content);
 
   const items: Post = {
+    description: description,
     content: parsedContent,
     title: data.title,
     slug: realSlug,
@@ -27,6 +29,15 @@ export async function getPostBySlug(slug: string) {
 
   return items;
 }
+
+const parseDescription = async (content: string) => {
+  const regex = /([^(###)]+)(?!###)/;
+  const match = content.match(regex);
+  let description = "";
+  if (match) description = match[0];
+
+  return description;
+};
 
 const parseContent = async (content: string) => {
   const regex = /(?:###\s(\w+))\n+(^[^(###)]+)/gm;

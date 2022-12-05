@@ -12,6 +12,7 @@ const PostTitle: React.FC<{ title: string }> = ({ title }) => {
           [classes.root]: true,
           "text-3xl": true,
           "font-bold": true,
+          "text-blue-600": true,
         })}
       >
         {title}
