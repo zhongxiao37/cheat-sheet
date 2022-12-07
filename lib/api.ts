@@ -40,13 +40,14 @@ const parseDescription = async (content: string) => {
 };
 
 const parseContent = async (content: string) => {
-  const regex = /(?:###\s(\w+))\n+(^[^#]+)/gm;
-  const codes = Array.from(content.matchAll(regex));
+  const regex = /(?:###\s(\w+))/gm;
+  const languages = Array.from(content.matchAll(regex)).map(m => m[1]);
+  const codes = content.split(/###\s\w+/gm).slice(0 - languages.length);
 
   const promises = await Promise.all(
-    codes.map(async (c) => {
-      const language = c[1].toLocaleLowerCase() as Languages;
-      const code = await markdownToHtml(c[2]);
+    codes.map(async (c, i) => {
+      const language = languages[i].toLocaleLowerCase() as Languages;
+      const code = await markdownToHtml(c);
       return { language, code };
     })
   );

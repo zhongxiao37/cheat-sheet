@@ -18,8 +18,7 @@ var argv = minimist(process.argv.slice(2), {
 const filePath = argv.t + ".md";
 const datetime = new Date().toISOString().slice(0, 19).replace("T", " ");
 
-const content = `
----
+const content = `---
 title: "${argv.t}"
 date: "${datetime}"
 ---
