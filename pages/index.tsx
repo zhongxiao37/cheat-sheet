@@ -8,7 +8,7 @@ import Post from "../types/post";
 export const Index: React.FC<{ posts: Post[] }> = ({ posts }) => {
   return (
     <Layout title="Ruby Cheat Sheet">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         {posts.map((post, m) => (
           <>
             <Link key={m} href={`/${post.slug}`}>

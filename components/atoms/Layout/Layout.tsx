@@ -14,7 +14,7 @@ const Layout: React.FC<{ title: string; children: React.ReactNode }> = ({
 
       <div className="container mx-auto px-4">
         <Link href="/">
-          <h1 className="text-5xl font-bold text-blue-600 mt-16 mb-12">
+          <h1 className="text-4xl font-bold text-blue-600 mt-16 mb-12">
             Ruby Cheat Sheet
           </h1>
         </Link>

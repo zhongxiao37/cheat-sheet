@@ -4,7 +4,7 @@ export default createUseStyles(
   {
     root: {
       padding: "16px",
-      width: "375px",
+      width: "359px",
       maxHeight: "600px",
       flexGrow: 0,
       flexShrink: 0,
