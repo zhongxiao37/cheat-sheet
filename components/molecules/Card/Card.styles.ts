@@ -14,6 +14,8 @@ export default createUseStyles(
       backgroundColor: "#ffffff",
       transition: "box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
       boxShadow: "rgb(0 0 0 / 16%) 4px 4px 20px 2px",
+      display: "flex",
+      flexDirection: "column",
     },
     title: {
       fontSize: "20px",
@@ -27,6 +29,7 @@ export default createUseStyles(
     code: {
       margin: "8px 0",
       color: "rgba(0, 0, 0, 0.6)",
+      overflow: "scroll",
     },
   },
   {
