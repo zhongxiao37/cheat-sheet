@@ -11,12 +11,14 @@ date: "2022-12-08 14:38:33"
 # include / included
 # prepend / prepended
 # extend / extended
+
+self.send(k)
 ```
 
 ### Python
 
 ```python
-
+getattr(self, k)()
 ```
 
 ### Javascript
