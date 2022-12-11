@@ -3,6 +3,7 @@ import useStyles from "./Card.styles";
 import clsx from "clsx";
 import { ICard } from "../../../types/post";
 import { Icon } from "../../atoms/Icon";
+import ReactMarkdown from "react-markdown";
 
 export const Card: React.FC<ICard> = ({ language, code }) => {
   const classes = useStyles();
@@ -13,10 +14,7 @@ export const Card: React.FC<ICard> = ({ language, code }) => {
         <div>{language}</div>
       </div>
       <hr />
-      <div
-        className={clsx(classes.code)}
-        dangerouslySetInnerHTML={{ __html: code }}
-      ></div>
+      <ReactMarkdown className={clsx(classes.code)}>{code}</ReactMarkdown>
     </div>
   );
 };
