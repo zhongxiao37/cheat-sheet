@@ -31,10 +31,10 @@ export const Post: React.FC<IPost> = ({ post }) => {
   return (
     <>
       {router.isFallback ? (
-        <PostTitle title="Loading…"></PostTitle>
+        <PostTitle title="Loading…" link="/"></PostTitle>
       ) : (
         <Layout title={post.title}>
-          <PostTitle title={post.title} />
+          <PostTitle title={post.title} link={post.slug} />
           <PostBody description={post.description} content={post.content} />
         </Layout>
       )}
