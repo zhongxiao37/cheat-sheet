@@ -9,6 +9,10 @@ date: "2022-12-08 14:34:31"
 (0..10).each do |i|
     puts i
 end
+
+{a: 1, b: 2}.each do |k, v|
+    puts [k, v]
+end
 ```
 
 ### Python
@@ -22,6 +26,10 @@ for i in range(10):
 
 for i in count(start=0, step=1):
     print(i)
+
+d = {'x': 1, 'y': 2, 'z': 3}
+for k, v in d.items():
+    print(k, v)
 
 while True:
     quotient = num // output_base

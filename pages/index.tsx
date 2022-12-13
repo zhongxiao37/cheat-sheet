@@ -23,9 +23,7 @@ export const Index: React.FC<{ posts: Post[] }> = ({ posts }) => {
       <div className="container mx-auto">
         {posts.map((post, m) => (
           <>
-            <Link key={m} href={`/${post.slug}`}>
-              <PostTitle title={post.title} />
-            </Link>
+            <PostTitle key={m} link={post.slug} title={post.title} />
             <PostBody description={post.description} content={post.content} />
           </>
         ))}
