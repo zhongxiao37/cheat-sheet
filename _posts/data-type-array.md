@@ -23,6 +23,21 @@ arr[1:]  # [2, 3]
 arr[:2]  # [1, 2]
 arr[::2] # [1, 3]
 arr + [4, 5, 6] # [1,2,3,4,5,6]
+
+for i in arr:
+  print(i)
+```
+
+Python 里面还有一种数据类型叫元组。元组是不可变的，对应的就是列表是可变的。
+
+此外，如果列表的元素都是数字，可以用`array.array`更为高效。
+
+```python
+from array import array
+from random import random
+floats = array('d', (random() for i in range(10**7)))
+fp = open('floats.bin', 'wb')
+floats.tofile(fp)
 ```
 
 ### Javascript
@@ -49,7 +64,7 @@ fmt.Printf("%q\n", data[:2])      // `["one" ""]`
 
 numbers := []int{1,2}
 numbers = append(numbers, 3, 4)  // [1,2,3,4]
-fmt.Printf("%v\n", numbers) // "[1,2,3,4]" 
+fmt.Printf("%v\n", numbers) // "[1,2,3,4]"
 ```
 
 ### Rust
@@ -57,4 +72,3 @@ fmt.Printf("%v\n", numbers) // "[1,2,3,4]"
 ```rust
 
 ```
-

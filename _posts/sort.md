@@ -22,6 +22,14 @@ a_list.sort() # None
 a_list # [1,2,3]
 ```
 
+如果你不想影响`a_list`，则可以用`sorted`方法。
+
+```python
+a_list = [3,2,1]
+sorted(a_list)
+ # [1,2,3]
+```
+
 ### Javascript
 
 ```javascript
