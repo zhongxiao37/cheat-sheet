@@ -19,6 +19,8 @@ Dictionary
 {'a': 1, 'b': 2, 'c': 3}
 ```
 
+无论是字典`dict`还是集合`set`，背后都是散列表数据结构，结果就是占用内存很大，能够快速判断 key 是否存在。
+
 ### Javascript
 
 ```javascript

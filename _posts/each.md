@@ -42,6 +42,28 @@ while True:
         break
 ```
 
+### Python
+
+还可以通过推导式把列表转换成为字典
+
+```python
+items = [
+  ('apple', 10),
+  ('orange', 5),
+  ('banana', 7)
+]
+
+{item: price for item, price in items}
+```
+
+，或者集合。
+
+```python
+from unicodedata import name
+{ chr(i) for i in range(32, 256) if 'SIGN' in name(chr(i), '')}
+
+```
+
 ### Javascript
 
 ```javascript
