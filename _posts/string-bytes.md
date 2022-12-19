@@ -1,24 +1,24 @@
 ---
-title: "chars"
-date: "2022-12-09 15:22:08"
+title: "string-bytes"
+date: "2022-12-19 07:19:37"
 ---
 
 ### Ruby
 
 ```ruby
-'foo'.chars
+'abc'.bytes
 ```
 
 ### Python
 
 ```python
-[char for char in 'foo']
+
 ```
 
 ### Javascript
 
 ```javascript
-Array.from("foo");
+
 ```
 
 ### Go
@@ -30,5 +30,5 @@ Array.from("foo");
 ### Rust
 
 ```rust
-"foo".chars()
+'abc'.bytes()
 ```

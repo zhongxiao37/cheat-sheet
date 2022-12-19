@@ -70,5 +70,18 @@ fmt.Printf("%v\n", numbers) // "[1,2,3,4]"
 ### Rust
 
 ```rust
+// 切片
+let s = String::from("hello world");
 
+// 引用了s的一部分
+let hello = &s[0..5];
+let world = &s[6..11];
+
+// 包括最后一个字符
+let len = s.len();
+
+let slice = &s[4..len];
+let slice = &s[4..];
 ```
+
+![引用字符串的一部分](../_images/string_slice.jpeg)
