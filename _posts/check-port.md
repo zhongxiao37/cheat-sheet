@@ -7,6 +7,8 @@ date: "2022-12-19 02:29:36"
 
 ```bash
 lsof -i -n -P | grep 3080
+nc -zvt smtp.gmail.com 654
+telnet smtp.gmail.com 654
 ```
 
 ### Ruby
