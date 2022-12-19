@@ -11,7 +11,7 @@ const PostBody: React.FC<{ description: string; content: ICard[] }> = ({
   const classes = useStyles();
 
   return (
-    <div>
+    <div className="flex flex-wrap">
       <div>{description}</div>
       <div className={clsx(classes.root)}>
         {content.map((c, i) => (

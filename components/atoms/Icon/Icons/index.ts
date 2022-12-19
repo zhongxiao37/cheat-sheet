@@ -1,3 +1,4 @@
+import BashIcon from "./BashIcon";
 import GoIcon from "./GoIcon";
 import RubyIcon from "./RubyIcon";
 import RustIcon from "./RustIcon";
@@ -10,6 +11,7 @@ export const ICONS = {
   python: PythonIcon,
   go: GoIcon,
   rust: RustIcon,
+  bash: BashIcon,
 };
 
 export default ICONS;

@@ -20,7 +20,7 @@ export const Index: React.FC<{ posts: Post[] }> = ({ posts }) => {
   }, []);
   return (
     <Layout title="Ruby Cheat Sheet">
-      <div className="flex flex-wrap">
+      <div>
         {posts.map((post, m) => (
           <>
             <PostTitle key={m} link={post.slug} title={post.title} />
