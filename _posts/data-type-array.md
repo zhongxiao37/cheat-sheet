@@ -30,6 +30,8 @@ for i in arr:
 
 Python 里面还有一种数据类型叫元组。元组是不可变的，对应的就是列表是可变的。
 
+### Python
+
 此外，如果列表的元素都是数字，可以用`array.array`更为高效。
 
 ```python
@@ -39,6 +41,8 @@ floats = array('d', (random() for i in range(10**7)))
 fp = open('floats.bin', 'wb')
 floats.tofile(fp)
 ```
+
+![array.array types](../_images/array_array_types.png)
 
 ### Javascript
 
