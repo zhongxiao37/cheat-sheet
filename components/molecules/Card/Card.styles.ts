@@ -4,18 +4,22 @@ export default createUseStyles(
   {
     root: {
       padding: "16px",
-      width: "359px",
+      width: "343px",
       maxHeight: "600px",
       flexGrow: 0,
       flexShrink: 0,
       border: "solid 1px #eeeeee",
       borderRadius: "8px",
-      margin: "16px",
+      margin: "16px 0",
       backgroundColor: "#ffffff",
       transition: "box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
       boxShadow: "rgb(0 0 0 / 16%) 4px 4px 20px 2px",
       display: "flex",
       flexDirection: "column",
+
+      "@media (min-width: 395px)": {
+        margin: "16px",
+      },
     },
     title: {
       fontSize: "20px",
