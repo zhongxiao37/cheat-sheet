@@ -42,7 +42,7 @@ fp = open('floats.bin', 'wb')
 floats.tofile(fp)
 ```
 
-![array.array types](../_images/array_array_types.png)
+![array.array types](./_images/array_array_types.png)
 
 ### Javascript
 
@@ -88,4 +88,4 @@ let slice = &s[4..len];
 let slice = &s[4..];
 ```
 
-![引用字符串的一部分](../_images/string_slice.jpeg)
+![引用字符串的一部分](./_images/string_slice.jpeg)
