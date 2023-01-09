@@ -35,6 +35,9 @@ sorted(a_list)
 ```javascript
 const arr = ["peach", "straw", "apple", "spork"];
 arr.sort();
+
+const arr = [5, 2, 3, 7, 9, 1];
+arr.sort((a, b) => b - a);
 ```
 
 ### Go
