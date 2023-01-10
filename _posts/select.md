@@ -24,15 +24,3 @@ less_than_zero = list(filter(lambda x: x < 0, range(-5, 5)))
 Array.from({ length: 5 }, (v, i) => i).filter((x) => x % 2 === 0);
 // [0, 2, 4]
 ```
-
-### Go
-
-```go
-
-```
-
-### Rust
-
-```rust
-
-```
